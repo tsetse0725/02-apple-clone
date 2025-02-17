@@ -50,7 +50,7 @@
 /* Iphone 16 */
 .ip {
   height: 500px;
-  background-image: url(/images/mobile/2.png);
+  background-image: url(./images/mobile/2.png);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@
 
 /* airpod */
 .airpod {
-  background-image: url(/images/mobile/4.png);
+  background-image: url(./images/mobile/4.png);
 }
 
 .airpod__title {
@@ -220,20 +220,24 @@ iwatch__text2 {
   margin-right: 15px;
 }
 
-.card-container-scroll{
-overflow: hidden;
+.card-container-scroll {
+  overflow: hidden;
 }
 
-.scroller{
+.container-scroll {
   width: 70%;
   height: 100%;
-  
+  cursor: pointer;
+}
+
+.container-scroll:hover {
+  animation-play-state: paused;
 }
 
 .container-scroll {
   display: flex;
   width: 100%;
-  height: 500px;  
+  height: 500px;
   animation-name: sliderleft;
   animation-iteration-count: infinite;
   animation-duration: 10s;
@@ -252,7 +256,6 @@ overflow: hidden;
     transform: translateX(-100%);
   }
 }
-
 
 /* .card-container2{width: 500px;
 height: calc(400px);
@@ -295,7 +298,44 @@ from{
   }
 } */
 
-.tablist{
-display: flex;
-justify-content: center;
+.tablist {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.slide-container {
+  overflow: hidden;
+}
+
+.slide-horizon {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.slide-horizon:hover {
+  animation-play-state: paused;
+}
+
+.slide-horizon {
+  display: flex;
+  animation-name: slideleft;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes slideright {
+  from {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideleft {
+  to {
+    transform: translateX(-100%);
+  }
 }
