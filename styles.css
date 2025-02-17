@@ -339,3 +339,8 @@ from{
     transform: translateX(-100%);
   }
 }
+
+.play {
+  float: right;
+  margin-right: 20px;
+}
