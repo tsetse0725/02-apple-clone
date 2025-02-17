@@ -1,0 +1,301 @@
+* {
+  margin: auto 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile */
+/* Header */
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+/* Iphone 16 pro */
+.ippro {
+  height: 500px;
+  background-image: url("./images/mobile/1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 250px;
+}
+
+.ippro__title {
+  color: white;
+}
+
+.ippro__text {
+  color: white;
+}
+
+.button1 {
+  background-color: blue;
+  border-radius: 20px;
+  padding: 5px 5px;
+  color: white;
+  margin: 4px 4px;
+}
+
+.button2 {
+  color: blue;
+  border-radius: 20px;
+  padding: 5px 5px;
+  background: transparent;
+}
+
+/* Iphone 16 */
+.ip {
+  height: 500px;
+  background-image: url(/images/mobile/2.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 250px;
+  background-size: cover;
+}
+
+.ip__title {
+  color: white;
+}
+
+.ip__text {
+  color: white;
+}
+/* ipad air */
+.ipad {
+  height: 500px;
+  background-image: url(./images/mobile/3.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-size: cover;
+}
+
+.ipad__title {
+  color: black;
+}
+
+.ipad__text {
+  color: black;
+}
+
+/* airpod */
+.airpod {
+  background-image: url(/images/mobile/4.png);
+}
+
+.airpod__title {
+  color: white;
+}
+
+.airpod__text {
+  color: white;
+}
+/* iwatch */
+.iwatch {
+  background-image: url("./images/mobile/5.png");
+}
+
+.iwatch__title {
+  color: black;
+}
+
+.iwatch__text1 {
+  color: black;
+}
+
+iwatch__text2 {
+  color: black;
+}
+/* Macbook air */
+.macbook {
+  background-image: url("./images/mobile/6.png");
+}
+
+.macbook__title {
+  color: black;
+}
+
+.macbook__text {
+  color: black;
+}
+/* Apple for small business */
+.business {
+  background-image: url(./images/mobile/7.png);
+}
+
+.business__titles {
+  color: black;
+}
+
+.business__text {
+  color: black;
+  font-size: 1.9rem;
+}
+/* Carrier deals at apple */
+.carrier {
+  background-image: url(./images/mobile/8.png);
+}
+
+.button3 {
+  color: white;
+  background-color: blue;
+  border-radius: 20px;
+  padding: 8px 8px;
+}
+
+.carrier__title {
+  color: black;
+}
+
+.carrier__text {
+  color: black;
+  font-size: 1.8rem;
+}
+/* Trade in */
+.trade {
+  background-image: url(./images/mobile/9.png);
+}
+
+.trade__title {
+  color: black;
+}
+
+.trade__text {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.button4 {
+  color: white;
+  background-color: blue;
+  border-radius: 20px;
+  padding: 8px 8px;
+}
+.card-item {
+  height: 500px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .card {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .list {
+    visibility: hidden;
+  }
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+.card-container-scroll{
+overflow: hidden;
+}
+
+.scroller{
+  width: 70%;
+  height: 100%;
+  
+}
+
+.container-scroll {
+  display: flex;
+  width: 100%;
+  height: 500px;  
+  animation-name: sliderleft;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+@keyframes sliderright {
+  from {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes sliderleft {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* .card-container2{width: 500px;
+height: calc(400px);
+background-color: darkgrey;
+overflow: hidden;
+border: 1px solid black;
+margin: 90px 50px;}
+
+.slider{
+  height: 400px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+animation: slide 4s linear infinite;
+scroll-snap-type: x mandatory;
+}
+
+
+.slider-item{
+
+  width: 70%;
+  height: 100%;
+  flex-shrink: 0;
+  background-color: aqua;
+flex-basis: 60%;
+flex-grow: 0;
+flex: 0 0 60%;
+cursor: pointer;
+scroll-snap-align: center;
+}
+
+.slider:hover{animation-play-state: paused;}
+@keyframes slide {
+  
+from{
+    transform: translateX(100);
+  }
+  to{
+    transform:translateX(-100%) ;
+  }
+} */
+
+.tablist{
+display: flex;
+justify-content: center;
+}
